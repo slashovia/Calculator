@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px;
+    border: 2px solid black;
+    background-color: darkolivegreen;
+
+    & button:not(:first-child) {
+        flex: 0 0 20%
+    }
+}
+
+.container {
+    button {
+        background-color: gray;
+        border: 2px solid darkgrey;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+    }
+
+
+
+    & .add,
+    & .subtract,
+    & .multiply,
+    & .divide {
+        color: tomato;
+    }
+
+    & .equal {
+        background-color: tomato;
+    }
+}
+
+
+
+.display {
+    flex-basis: 100%;
+    order: 0;
+}
+
+.divide {
+    margin-left: auto;
+    order: 1;
+
+}
+
+.seven {
+    order: 2;
+}
