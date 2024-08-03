@@ -23,47 +23,103 @@ body {
     border: 2px solid black;
     background-color: darkolivegreen;
 
-    & button:not(:first-child) {
-        flex: 0 0 20%
+    & :not(:first-child) {
+        flex: 0 0 20%;
     }
 }
 
-.container {
-    button {
-        background-color: gray;
-        border: 2px solid darkgrey;
-        color: white;
-        font-weight: bold;
-        font-size: large;
-    }
-
-
-
-    & .add,
-    & .subtract,
-    & .multiply,
-    & .divide {
-        color: tomato;
-    }
-
-    & .equal {
-        background-color: tomato;
-    }
+button,
+.display {
+    background-color: grey;
+    border: 2px solid darkgrey;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 
+.add,
+.subtract,
+.multiply,
+.divide {
+    color: tomato;
+}
 
 .display {
     flex-basis: 100%;
     order: 0;
+    direction: rtl;
 }
 
 .divide {
-    margin-left: auto;
     order: 1;
-
 }
 
 .seven {
     order: 2;
+}
+
+.eight {
+    order: 3;
+}
+
+.nine {
+    order: 4;
+}
+
+.multiply {
+    order: 5;
+}
+
+.four {
+    order: 6;
+}
+
+.five {
+    order: 7;
+}
+
+.six {
+    order: 8;
+}
+
+.subtract {
+    order: 9;
+}
+
+.one {
+    order: 10;
+}
+
+.two {
+    order: 11;
+}
+
+.three {
+    order: 12;
+}
+
+.add {
+    order: 13;
+}
+
+.zero {
+    order: 14;
+}
+
+.dot {
+    order: 15;
+}
+
+.backspace {
+    order: 16;
+}
+
+.equal {
+    order: 17;
+    background-color: tomato;
+}
+
+.hidden {
+    visibility: hidden;
 }
