@@ -7,119 +7,58 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .container {
-    height: 70%;
-    width: 30%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.btn {
+    height: 60px;
+    width: 60px;
+    margin: 12px;
+    background-color: white;
+    font-size: 2rem;
+}
+
+.number {
+    border: 1px solid blue;
+}
+
+.operator {
+    border: 1px solid lime;
+}
+
+.clear {
+
+    background-color: lightcoral;
+}
+
+.decimal {
+    border: 1px solid gold;
+}
+
+.display {
+    height: 60px;
+    width: 234px;
+    margin: 12px;
+    border: 1px solid purple;
+    justify-content: flex-end;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 16px;
-    border: 2px solid black;
-    background-color: darkolivegreen;
-
-    & :not(:first-child) {
-        flex: 0 0 20%;
-    }
+    font-size: 48px;
 }
 
-button,
-.display {
-    background-color: grey;
-    border: 2px solid darkgrey;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-
-.add,
-.subtract,
-.multiply,
-.divide {
-    color: tomato;
-}
-
-.display {
-    flex-basis: 100%;
-    order: 0;
-    direction: rtl;
-}
-
-.divide {
-    order: 1;
-}
-
-.seven {
-    order: 2;
-}
-
-.eight {
-    order: 3;
-}
-
-.nine {
-    order: 4;
-}
-
-.multiply {
-    order: 5;
-}
-
-.four {
-    order: 6;
-}
-
-.five {
-    order: 7;
-}
-
-.six {
-    order: 8;
-}
-
-.subtract {
-    order: 9;
-}
-
-.one {
-    order: 10;
-}
-
-.two {
-    order: 11;
-}
-
-.three {
-    order: 12;
-}
-
-.add {
-    order: 13;
-}
-
-.zero {
-    order: 14;
-}
-
-.dot {
-    order: 15;
-}
-
-.backspace {
-    order: 16;
-}
-
-.equal {
-    order: 17;
-    background-color: tomato;
-}
-
-.hidden {
-    visibility: hidden;
+.first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
